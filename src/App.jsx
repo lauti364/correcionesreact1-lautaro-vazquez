@@ -1,13 +1,17 @@
 import './app.css'
 import React from 'react';
+import { ItemCount } from './components/ItemCount'
+import { Navbar } from './components/Navbar'
+import { ItemListContainer } from './components/ItemListContainer'
 
-const App = () => {
+export const App = () => {
   return (
-    <div>
-      <div></div>
-    </div>
-   
-  );
+    <>
+      <Navbar />
+      <ItemCount />
+      <ItemListContainer greeting={"Hola, buenas noches"} />
+    </>
+  )
 }
 
 export default App;
