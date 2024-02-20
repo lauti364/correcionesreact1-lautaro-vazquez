@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { ItemList } from "./ItemList"
+import { ItemList } from "./itemlist"
 export const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     useEffect(() => {
