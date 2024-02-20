@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "title": "jordan rojas",
+        "title": "red jordan",
         "size": "38",
         "price": 2200,
         "stock": 15,
@@ -86,7 +86,7 @@
         "size": "44",
         "price": 2500,
         "stock": 20,
-        "img": "10.jpg",
+        "img": "1.jpg",
         "category": "urban"
     }
 ]
