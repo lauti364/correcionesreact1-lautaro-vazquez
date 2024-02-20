@@ -2,91 +2,91 @@
     {
         "id": 1,
         "title": "botines negros",
-        "price": 1000,
-        "stock": 6,
-        "img": "1.jpg"
+        "size": "40",
+        "price": 1500,
+        "stock": 10,
+        "img": "1.webp",
+        "category": "futbol"
     },
-
-
     {
         "id": 2,
-        "title": "jordan 1 rojas",
-        "price": 6000,
-        "stock": 12,
-        "img": "2.jpg"
+        "title": "jordan rojas",
+        "size": "38",
+        "price": 2200,
+        "stock": 15,
+        "img": "2.jpg",
+        "category": "urban"
     },
-
-
     {
         "id": 3,
         "title": "adidas forum",
-        "price": 11111,
-        "stock": 1,
-        "img": "3.jpg"
+        "size": "42",
+        "price": 2100,
+        "stock": 9,
+        "img": "3.jpg",
+        "category": "urban"
     },
-
-
     {
         "id": 4,
-        "title": "nike air",
-        "price": 600,
-        "stock": 3,
-        "img": "4.jpg"
+        "title": "nike dunk",
+        "size": "44",
+        "price": 1800,
+        "stock": 10,
+        "img": "4.jpg",
+        "category": "basketbal"
     },
-
-
     {
         "id": 5,
         "title": "dc",
-        "price": 100,
-        "stock": 60,
-        "img": "5.jpg"
+        "size": "38,40",
+        "price": 2700,
+        "stock": 24,
+        "img": "5.jpg",
+        "category": "skate"
     },
-
-
     {
         "id": 6,
         "title": "vans",
-        "price": 200,
+        "size": "40,42,44",
+        "price": 1700,
         "stock": 15,
-        "img": "6.jpg"
+        "img": "6.jpg",
+        "category": "skate"
     },
-
-
     {
         "id": 7,
         "title": "lacoste",
-        "price": 700,
-        "stock": 70,
-        "img": "7.jpg"
+        "size": "38,44,40",
+        "price": 1800,
+        "stock": 15,
+        "img": "7.jpg",
+        "category": "formal"
     },
-
-
     {
         "id": 8,
         "title": "gucci",
-        "price": 10000,
-        "stock": 2,
-        "img": "8.jpg"
+        "size": "40,42,44,48",
+        "price": 2800,
+        "stock": 12,
+        "img": "8.jpg",
+        "category": "formal"
     },
-
-
     {
         "id": 9,
         "title": "nike black",
-        "price": 1000,
-        "stock": 20,
-        "img": "9.jpg"
+        "size": "36",
+        "price": 1600,
+        "stock": 17,
+        "img": "9.jpg",
+        "category": "urban"
     },
-
     {
         "id": 10,
         "title": "osiris",
-        "price": 2000,
-        "stock": 30,
-        "img": "10.jpg"
+        "size": "44",
+        "price": 2500,
+        "stock": 20,
+        "img": "10.jpg",
+        "category": "urban"
     }
-
-
-
 ]
