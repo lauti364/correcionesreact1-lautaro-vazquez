@@ -1,5 +1,4 @@
-header {
-  background-color: #333;
+header {background-color: rgb(171, 104, 235);
   padding: 10px;
   color: #fff;
   text-align: center;
@@ -18,3 +17,5 @@ header {
   }
   .logo {
     width: 50px;}
+body{margin: 0;background-image:url(../public/data/img/f4.jpg)
+}

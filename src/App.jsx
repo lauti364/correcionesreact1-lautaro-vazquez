@@ -9,8 +9,8 @@ export const App = () => {
   return (
     <>
       <Navbar />
-      <ItemCount />
       <ItemListContainer greeting={"Bienvenido a la pagina de zapatillas mas grande de Buenos Aires"} />
+      <ItemCount />    
     </>
   )
 }

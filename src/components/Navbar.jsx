@@ -6,6 +6,7 @@ export const Navbar = () => {
 <nav>
       <a href="#">catalogo</a>
       <a href="#">donde nos encontramos</a>
+      <a href="#">contactanos</a>
     </nav> 
     <img src="../logo.png" alt="logo" className="logo"></img>
 </header>

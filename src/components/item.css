@@ -1,2 +1,5 @@
-body{padding: 0px;margin: 0px;background-color: brown;}
-.bitem{margin-left: 600px;}
+
+.bitem{
+    margin: 0;
+    padding: 5px;margin-left: 400px;text-align: center;align-items: center; }
+.pro{padding: 0px;color: rgb(14, 158, 174);align-items: center;text-align: center;margin-right: 550px;}
