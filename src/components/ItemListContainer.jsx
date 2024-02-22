@@ -3,7 +3,7 @@ import { ItemList } from "./itemlist"
 export const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('./data/productos.json')
+        fetch('../data/productos.json')
             .then(response => response.json())
             .then(prods => {
                 setProducts(prods)
