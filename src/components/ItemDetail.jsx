@@ -18,7 +18,7 @@ export const ItemDetail = ({ item }) => {
             <img className="w-full h-64 object-cover mb-6" src={`../img/${item.img}`} alt={`Imagen de ${item.title}`} />
             <div className="text-center">
                 <h2 className="text-2x1 font-bold mb-2">{item.title}</h2>
-                <p className="text-gray-700 mb-2 font-semibold">Tamaño maseta: {item.size}</p>
+                <p className="text-gray-700 mb-2 font-semibold">talle: {item.size}</p>
                 <p className="text-gray-700 mb-2 font-semibold">Stock: {item.stock}</p>
                 <p className="text-gray-700 mb-2 font-semibold">Precio: ${item.price}</p>
                 <div className="container mx-auto mt-8">
