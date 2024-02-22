@@ -6,7 +6,7 @@
         "price": 1500,
         "stock": 10,
         "img": "1.jpg",
-        "category": "futbol"
+        "category": "Fotball"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "price": 2200,
         "stock": 15,
         "img": "2.jpg",
-        "category": "urban"
+        "category": "Urban"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "price": 2100,
         "stock": 9,
         "img": "3.jpg",
-        "category": "urban"
+        "category": "Urban"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "price": 1800,
         "stock": 10,
         "img": "4.jpg",
-        "category": "basketbal"
+        "category": "Basketball"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "price": 2700,
         "stock": 24,
         "img": "5.jpg",
-        "category": "skate"
+        "category": "Skate"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "price": 1700,
         "stock": 15,
         "img": "6.jpg",
-        "category": "skate"
+        "category": "Skate"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "price": 1800,
         "stock": 15,
         "img": "7.jpg",
-        "category": "formal"
+        "category": "Formal"
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@
         "price": 2800,
         "stock": 12,
         "img": "8.jpg",
-        "category": "formal"
+        "category": "Formal"
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@
         "price": 1600,
         "stock": 17,
         "img": "9.jpg",
-        "category": "urban"
+        "category": "Urban"
     },
     {
         "id": 10,
@@ -87,6 +87,6 @@
         "price": 2500,
         "stock": 20,
         "img": "10.jpg",
-        "category": "urban"
+        "category": "Urban"
     }
 ]
