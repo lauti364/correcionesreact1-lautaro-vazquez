@@ -13,14 +13,17 @@ import {ItemDetailsContainer} from './components/ItemDetailsContainer'
 
 export const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <ItemListContainer greeting={"Bienvenido a la pagina de zapatillas mas grande de Buenos Aires"} />
-      <ItemCount />  
-      <footer />
-    </>
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/category/:cid' element={<ItemListContainer />} />
+        <Route path='/product/:pid' element={<ItemDetailsContainer />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+
   )
 }
-
-
-export default App;
