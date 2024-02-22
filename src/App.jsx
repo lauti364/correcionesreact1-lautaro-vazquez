@@ -23,6 +23,7 @@ export const App = () => {
         <Route path='/checkout' element={<Checkout />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      
     </BrowserRouter>
 
   )
