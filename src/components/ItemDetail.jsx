@@ -13,7 +13,7 @@ export const ItemDetail = ({ item }) => {
         <div className="">
             
 
-            <img className="w-full h-64 object-cover mb-6" src={`../img/${item.img}`} alt={`Imagen de ${item.title}`} />
+            <img className="w-full h-64 object-cover mb-6" src={`../data/img/${item.img}`} alt={`Imagen de ${item.title}`} />
             <div className="text-center">
                 <h2 className="text-2x1 font-bold mb-2">{item.title}</h2>
                 <p className="text-gray-700 mb-2 font-semibold">talle: {item.size}</p>
