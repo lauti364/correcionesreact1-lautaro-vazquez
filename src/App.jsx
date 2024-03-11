@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React from 'react';
 import { ItemCount } from './components/ItemCount'
 import { Navbar } from './components/Navbar'
-
 import { ItemListContainer } from './components/ItemListContainer'
 import { Cart } from './components/Cart'
 import { NotFound } from './components/NotFound'
 import{footer} from './components/footer'
 import {Checkout} from './components/Checkout'
 import {ItemDetailsContainer} from './components/ItemDetailsContainer'
+import { CarritoProvider } from './context/CartContext.jsx'
 
 export const App = () => {
   return (

@@ -1,5 +1,5 @@
 import { useRef } from "react"
-
+<link rel="stylesheet" href="./item.css"/>
 export const Checkout = () => {
     const formRef = useRef()
 
@@ -11,9 +11,9 @@ export const Checkout = () => {
         e.target.reset()
     }
     return (
-        <div className="max-w-md mx-auto p-6 mt-2 bg-gray-200 rounded-md shadow-md">
+        <div className="formulario">
             <form action="" ref={formRef} onSubmit={handleSubmit}>
-                <label className="block mb-1 text-gray-700">Nombre: </label>
+                <label>Nombre:</label>
                 <input type="text" className="w-full p-2 mb-3 border rounded-md" name="nombre" />
                 <label className="block mb-1 text-gray-700">Apellido: </label>
                 <input type="text" className="w-full p-2 mb-3 border rounded-md" name="apellido" />
