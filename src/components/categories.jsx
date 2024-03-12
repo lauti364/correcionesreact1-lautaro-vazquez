@@ -33,9 +33,9 @@ export const Categories = () => {
                 </Link>
             </li>
             <li className="text-white">
-                <Link to={'/category/Football'}>
+                <Link to={'/category/Fotball'}>
                     <button className="bg-teal-500 text-white px-4 py-2 rounded flex items-center">
-                        <span>Futbol</span>
+                        <span>futbol</span>
                     </button>
                 </Link>
             </li>
