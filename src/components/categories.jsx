@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Cart } from "./Cart"
 export const Categories = () => {
     return (
         <>
@@ -51,6 +52,7 @@ export const Categories = () => {
                     </button>
                 </Link>
             </li>
+           
         </>
     )
 }

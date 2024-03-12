@@ -7,7 +7,7 @@ export const Navbar = () => {
 <h3>ShoesBA</h3>
     <nav>
     <Categories />
-
+  
     </nav> 
     <img src="../logo.png" alt="logo" className="logo"></img>
 </header>
