@@ -18,7 +18,7 @@ export const Cart = () => {
                     </>
                     :
                     <div>
-                        {<ItemList products={carrito} plantilla="ItemCart" />}
+                        {<Itemlist products={carrito} plantilla="ItemCart" />}
                         <div>
                             <p>Resumen de la compra: $ {totalPrice()}</p>
                             <button className="bg-indigo-500 text-white px-4 py-2 rounded" onClick={emptyCart}>
