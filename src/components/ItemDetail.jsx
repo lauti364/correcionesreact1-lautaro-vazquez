@@ -8,16 +8,8 @@ export const ItemDetail = ({ item }) => {
 
     const handleAddToCart = () => {
         addItem(item, count)
-        toast.success(`Producto agregado al carrito correctamente`, {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark"
-        })
+        
+        
     }
     return (
 <div className="caja">
