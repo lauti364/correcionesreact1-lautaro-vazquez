@@ -2,13 +2,12 @@ import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
 import { Itemlist } from "./Itemlist.jsx"
 import { getProducts } from "../firebase/firebase.js"
+
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const { cid } = useParams()
 
     useEffect(() => {
-        //fetch('../data/productos.json')
-        //    .then(response => response.json())
         getProducts()
             .then(prods => {
                 const productos = prods.filter(prod => prod.stock > 0)
@@ -18,14 +17,13 @@ export const ItemListContainer = () => {
                 } else {
                     setProducts(productos)
                 }
-
             })
             .catch((error) => console.log(error))
     }, [cid])
 
-
     return (
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div>
+            {/* Corregido el nombre del componente a Itemlist */}
             <Itemlist products={products} plantilla="Item" />
         </div>
     )
