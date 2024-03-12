@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
-import { ItemList } from "./ItemList.jsx"
+import { ItemList } from "./ItemList"
 import { getProducts } from "../firebase/firebase.js"
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([])
