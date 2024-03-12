@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
-import { Itemlist } from "./Itemlist.jsx"
+import { ItemList } from "./ItemList.jsx"
 import { getProducts } from "../firebase/firebase.js"
 
 export const ItemListContainer = () => {
@@ -23,8 +23,8 @@ export const ItemListContainer = () => {
 
     return (
         <div>
-            {/* Corregido el nombre del componente a Itemlist */}
-            <Itemlist products={products} plantilla="Item" />
+            {/* Corregido el nombre del componente a ItemList */}
+            <ItemList products={products} plantilla="Item" />
         </div>
     )
 }
