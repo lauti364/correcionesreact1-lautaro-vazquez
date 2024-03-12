@@ -40,3 +40,4 @@
     .formulario input[type="submit"]:hover {
         background-color: #45a049;
     }
+    .detalles{display: flex;justify-content: center;align-items: center;}
