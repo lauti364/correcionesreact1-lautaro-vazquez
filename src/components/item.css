@@ -41,3 +41,5 @@
         background-color: #45a049;
     }
     .detalles{display: flex;justify-content: center;align-items: center;}
+    .caja{background-color: #301a3e;display: flex;justify-content: center;align-items: center;color: white;}
+    .caja p{justify-content: center;}
