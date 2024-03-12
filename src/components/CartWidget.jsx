@@ -1,3 +1,4 @@
+
 import { useCarritoContext } from "../context/CartContext"
 import { Link } from "react-router-dom"
 export const CartWidget = () => {
@@ -6,7 +7,7 @@ export const CartWidget = () => {
         <li className="text-white">
             <Link to={'/cart'}>
                 <button className="bg-teal-500 text-white px-4 py-2 rounded flex items-center">
-                    <FontAwesomeIcon icon={faShoppingCart} className="mr-2" />
+                <img src="../logo.png" alt="logo" className="logo"></img>
                     <span>{getItemQuantity()}</span>
                 </button>
             </Link>
