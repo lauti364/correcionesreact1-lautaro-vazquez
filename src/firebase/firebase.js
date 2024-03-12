@@ -12,7 +12,8 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-const bdd = getFirestore();
+//Consultar a la BDD
+const bdd = getFirestore()
 
 /*
     Create
@@ -20,8 +21,8 @@ const bdd = getFirestore();
     Update
     Delete
 */
-// Crear productos
 
+//Crear productos
 const prods = [
     {
         
@@ -115,7 +116,7 @@ const prods = [
     }
 ]
 export const createProducts = async () => {
-    for (const prod of prods) {
+    prods.forEach(async (prod) => {
         await addDoc(collection(bdd, "productos"), {
             title: prod.title,
             size: prod.size,
@@ -123,51 +124,51 @@ export const createProducts = async () => {
             stock: prod.stock,
             category: prod.category,
             img: prod.img
-        });
-    }
-};
+        })
+    })
 
-// Llamada a la función para crear productos después de la inicialización de Firebase
-createProducts();
+}
 
 // Consultar productos
 export const getProducts = async () => {
-    const productos = await getDocs(collection(bdd, "productos"));
-    const items = productos.docs.map(prod => ({ ...prod.data(), id: prod.id }));
-    return items;
+    const productos = await getDocs(collection(bdd, "productos"))
+    const items = productos.docs.map(prod => { return { ...prod.data(), id: prod.id } })
+    return items
 }
 
-
-// Consultar Producto
+//Consultar Producto
 export const getProduct = async (id) => {
-    const producto = await getDoc(doc(bdd, "productos", id));
-    const item = { ...producto.data(), id: producto.id };
-    return item;
+    const producto = await getDoc(doc(bdd, "productos", id))
+    const item = { ...producto.data(), id: producto.id }
+    return item
 }
 
 // Actualizar Producto
+
 export const updateProduct = async (id, info) => {
-    await updateDoc(doc(bdd, "productos", id), info);
+    await updateDoc(doc(bdd, "productos", id), info)
 }
 
 // Eliminar producto
+
 export const deleteProduct = async (id) => {
-    await deleteDoc(doc(bdd, "productos", id));
+    await deleteDoc(doc(bdd, "productos", id))
 }
 
-// CREATE AND READ Ordenes de Compra
+//CREATE AND READ Ordenes de Compra
+
 export const createOrdenCompra = async (cliente, precioTotal, carrito, fecha) => {
     const ordenCompra = await addDoc(collection(bdd, "ordenesCompra"), {
         cliente: cliente,
         items: carrito,
         precioTotal: precioTotal,
         fecha: fecha
-    });
-    return ordenCompra;
+    })
+    return ordenCompra
 }
 
 export const getOrdenCompra = async (id) => {
-    const ordenCompra = await getDoc(doc(bdd, "ordenesCompra", id));
-    const item = { ...ordenCompra.data(), id: ordenCompra.id };
-    return item;
+    const ordenCompra = await getDoc(doc(bdd, "ordenesCompra", id))
+    const item = { ...ordenCompra.data(), id: ordenCompra.id }
+    return item
 }
