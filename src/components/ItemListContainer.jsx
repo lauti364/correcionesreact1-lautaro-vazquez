@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
-import { ItemList } from "./ItemList"
+import { Itemlist } from "./Itemlist.jsx"
 import { getProducts } from "../firebase/firebase.js"
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([])
@@ -26,7 +26,7 @@ export const ItemListContainer = () => {
 
     return (
         <div className="flex flex-wrap gap-4 justify-center">
-            <ItemList products={products} plantilla="Item" />
+            <Itemlist products={products} plantilla="Item" />
         </div>
     )
 }
