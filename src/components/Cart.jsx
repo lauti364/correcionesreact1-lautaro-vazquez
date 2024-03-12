@@ -10,7 +10,7 @@ export const Cart = () => {
                 carrito.length === 0 ?
                     <>
                         <h1>Carrito Vacio</h1>
-                        <button className="bg-indigo-500 text-white px-4 py-2 rounded" >
+                        <button>
                             <Link to={'/'}>
                                 Volver al inicio
                             </Link>
@@ -24,12 +24,12 @@ export const Cart = () => {
                             <button className="bg-indigo-500 text-white px-4 py-2 rounded" onClick={emptyCart}>
                                 Vaciar Carrito
                             </button>
-                            <button className="bg-indigo-500 text-white px-4 py-2 rounded" >
+                            <button>
                                 <Link to={'/'}>
                                     Continuar Comprando
                                 </Link>
                             </button>
-                            <button className="bg-indigo-500 text-white px-4 py-2 rounded" >
+                            <button>
                                 <Link to={'/checkout'}>
                                     Finalizar compra
                                 </Link>
