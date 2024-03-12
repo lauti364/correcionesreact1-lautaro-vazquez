@@ -1,4 +1,3 @@
-
 import { useCarritoContext } from "../context/CartContext"
 import { Link } from "react-router-dom"
 export const CartWidget = () => {
