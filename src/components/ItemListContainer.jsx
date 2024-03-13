@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
 import { getProducts } from "../firebase/firebase.js"
-import { ItemList } from "./Itemlist.jsx"
+import { ItemList } from "./Itemlist"
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const { cid } = useParams()
@@ -22,7 +22,6 @@ export const ItemListContainer = () => {
 
     return (
         <div>
-            {/* Corregido el nombre del componente a ItemList */}
             <ItemList products={products} plantilla="Item" />
         </div>
     )
