@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
 import { getProducts } from "../firebase/firebase.js"
-import { ItemList } from "./Itemlist"
+import { Itemlist } from "./Itemlist.jsx"
 export const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const { cid } = useParams()
@@ -22,7 +22,7 @@ export const ItemListContainer = () => {
 
     return (
         <div>
-            <ItemList products={products} plantilla="Item" />
+            <Itemlist products={products} plantilla="Item" />
         </div>
     )
 }
