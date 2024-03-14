@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 # correcionesreact1-lautaro-vazquez
 # entregafinalLV
 # entregafinalLV
+# final-de-react
